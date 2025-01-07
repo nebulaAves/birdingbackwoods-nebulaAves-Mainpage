@@ -27,7 +27,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: url('your-image.jpg') no-repeat center center/cover; /* Replace with your image */
+            background: url('https://github.com/nebulaAves/birdingbackwoods-nebulaAves-Mainpage/blob/main/main.jpg?raw=true') no-repeat center center/cover;
             text-align: center;
         }
 
@@ -59,29 +59,25 @@
             background-color: #772E25;
         }
 
-        /* Navigation Bar */
+        /* Navigation Bar Inside Header */
         nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
+            position: absolute;
+            top: 2rem;
+            left: 2rem;
             display: flex;
-            justify-content: center;
-            padding: 1rem;
-            background: rgba(237, 221, 212, 0.8);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
+            gap: 1rem;
+            font-size: 0.9rem;
         }
 
         nav ul {
             list-style: none;
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
         }
 
         nav ul li a {
             text-decoration: none;
             color: #333;
-            font-size: 1rem;
             font-weight: bold;
             transition: color 0.3s ease;
         }
@@ -90,7 +86,7 @@
             color: #197278;
         }
 
-        /* Social Links at the Bottom */
+        /* Social Links with Instagram Logo */
         .social-links {
             position: absolute;
             bottom: 2rem;
@@ -112,12 +108,16 @@
             background-color: #FFFFFF;
             color: #C44536;
         }
+
+        .social-links img {
+            width: 24px;
+            height: 24px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="https://github.com/nebulaAves" target="_blank">GitHub</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -130,7 +130,9 @@
         <a href="gallery.html">Gallery</a>
 
         <div class="social-links">
-            <a href="https://instagram.com/" target="_blank">Instagram</a>
+            <a href="https://instagram.com/" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            </a>
         </div>
     </header>
 </body>
