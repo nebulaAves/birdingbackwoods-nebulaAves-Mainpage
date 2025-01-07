@@ -1,0 +1,64 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+  font-family: 'IM Fell French Canon', serif;
+  background-color: #EDDDD4; /* Background */
+  color: #FFFFFF; /* Default font color */
+}
+
+/* Header Section */
+.header {
+  height: 75px;
+  background-color: #197278; /* Header Green */
+  width: 100%;
+}
+
+/* Main Content Layout */
+.content {
+  padding: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.box {
+  flex: 1;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Box Colors */
+.photography {
+  background-color: #772E25; /* Red */
+}
+
+.software {
+  background-color: #283D3B; /* Blue */
+}
+
+.socials {
+  background-color: #C44536; /* Redder Yellow */
+  height: 200px;
+}
+
+/* Hover Effects */
+.photography:hover, .software:hover, .socials:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
