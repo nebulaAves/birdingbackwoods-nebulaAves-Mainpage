@@ -27,7 +27,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background: url('https://github.com/nebulaAves/birdingbackwoods-nebulaAves-Mainpage/blob/main/main.jpg') no-repeat center center/cover;
+            background: url('main.jpg') no-repeat center center/cover; /* Updated background image */
             text-align: center;
         }
 
@@ -47,23 +47,25 @@
 
         header a {
             text-decoration: none;
-            padding: 0.8rem 2rem;
-            background-color: #C44536;
-            color: #FFFFFF;
-            border-radius: 5px;
+            padding: 1rem 2rem;
+            border: 2px solid #662C36; /* Oval outline */
+            border-radius: 50px;
+            color: #662C36;  /* Text color inside the oval */
             font-size: 1.2rem;
             transition: background-color 0.3s ease;
+            opacity: 0.8; /* Make the background of the button opaque */
         }
 
         header a:hover {
-            background-color: #772E25;
+            background-color: #662C36;
+            color: white;
         }
 
         /* Navigation Bar Inside Header */
         nav {
             position: absolute;
             top: 2rem;
-            left: 2rem;
+            left: 12rem; /* Corrected to move top bar 10px to the right */
             display: flex;
             gap: 1rem;
             font-size: 0.9rem;
@@ -85,22 +87,6 @@
 
         nav ul li a:hover {
             color: #197278;
-        }
-
-        /* Gallery Button - Oval Outline */
-        header a {
-            text-decoration: none;
-            padding: 1rem 2rem;
-            border: 2px solid #662C36; /* Oval outline */
-            border-radius: 50px;
-            color: #662C36;  /* Text color inside the oval */
-            font-size: 1.2rem;
-            transition: background-color 0.3s ease;
-        }
-
-        header a:hover {
-            background-color: #662C36;
-            color: white;
         }
 
         /* Social Links with Instagram Logo */
@@ -148,7 +134,7 @@
 
         <div class="social-links">
             <a href="https://instagram.com/" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram" style="filter: invert(29%) sepia(51%) saturate(4817%) hue-rotate(330deg) brightness(95%) contrast(94%);">
             </a>
         </div>
     </header>
