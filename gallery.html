@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | nebulaAves / BirdingBackwoods</title>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&display=swap" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IM Fell French Canon', serif;
+            background-color: #EDDDD4;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        /* Fullscreen Header Section */
+        header {
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('main.jpg') no-repeat center center/cover;
+            text-align: center;
+            position: relative;
+            color: white;
+            z-index: 1;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+            margin-bottom: 1rem;
+        }
+
+        /* Gallery Grid */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 12rem;
+            display: flex;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: #662C36;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #662C36;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #197278;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="https://github.com/nebulaAves" target="_blank">GitHub</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Birding NebulaAves</h1>
+        <p>Explore the beauty of nature through ecological software and photography.</p>
+    </header>
+
+    <section class="gallery">
+        <img src="image1.jpg" alt="Gallery Image 1">
+        <img src="image2.jpg" alt="Gallery Image 2">
+        <img src="image3.jpg" alt="Gallery Image 3">
+        <img src="image4.jpg" alt="Gallery Image 4">
+        <!-- Add more images as needed -->
+    </section>
+</body>
+</html>
